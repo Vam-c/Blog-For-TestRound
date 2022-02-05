@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -5,7 +6,7 @@ const mongoose = require("mongoose");
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 
-mongoose.connect("mongodb://localhost:27017/testblogdb",{useNewUrlParser: true});
+mongoose.connect("mongodb://admin-vamsee:"+process.env.PASSWORD+"@cluster0-shard-00-00.upkqa.mongodb.net:27017,cluster0-shard-00-01.upkqa.mongodb.net:27017,cluster0-shard-00-02.upkqa.mongodb.net:27017/testblogDB?ssl=true&replicaSet=atlas-f7p89f-shard-0&authSource=admin&retryWrites=true&w=majority",{useNewUrlParser: true});
 
 const postSchema = new mongoose.Schema({
     title: String,
