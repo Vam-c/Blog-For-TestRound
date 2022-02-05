@@ -1,0 +1,24 @@
+{
+  "name": "blog-for-testround",
+  "version": "1.0.0",
+  "description": "A backend CRUD app for posts of a blogging app. Without authorization.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vam-c/Blog-For-TestRound.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vam-c/Blog-For-TestRound/issues"
+  },
+  "homepage": "https://github.com/Vam-c/Blog-For-TestRound#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "mongoose": "^6.2.0"
+  }
+}
